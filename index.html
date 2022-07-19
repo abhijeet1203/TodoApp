@@ -15,25 +15,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@1,300&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- used google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:wght@200&family=Montserrat:ital,wght@1,300&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Used bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Used own CSS file -->
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <div class="container-home-main">
-        <h1><u>ToDo Application</u></h1>
-        <div class="input-container-home">
-            <input class="input-text-child" type="text" placeholder="Enter Tasks">
-            <button id="input-button-home">Enter</button>
+    <div class="container-lg">
+        <br><br>
+        <div class="col application-header">
+            <h1><u>ToDo Application</u></h1>
+        </div><br>
+        <div class="col" id="welcome-header">
+            <!-- <h2>Welcome Message</h2> -->
+        </div><br>
+        <div class="container-lg mb-3">
+            <!-- mb-3 used for spacing between div's -->
+            <div class="row justify-content-lg-center">
+                <!-- justify-content-lg-center Used to keep the data for the row in center -->
+                <div class="col col-lg-4 " id="input-data-container">
+                    <!-- From 12 allocated 4 to this column -->
+                    <input type="text" placeholder="Enter Tasks...." id="input-text-child"size="45"> <br>
+                </div>
+                <div class="col-lg-2 " id="input-data-btn">
+                    <!-- From 12 allocated 2 to this column -->
+                    <input type="button" value="+" class="btn btn-primary">
+                    <!-- btn-primary & btn-danger are the colors for the button -->
+                </div>
+            </div>
         </div>
-        <div class="data-container-home">
-            <div class="data-sub-container-1">Shopping</div>
-            <div class="data-sub-container-2">Cleaning</div>
-            <div class="data-sub-container-3">Completing project</div>
+        <div class="container-lg fw-bold" id="user-entered-tasks-1">
+            <!-- <div class="row  justify-content-lg-center mb-3" id="row-user-input">
+                <div class="col col-lg-4" id="user-entry">
+                    <div class="fs-2" id="1"><strong>Shopping</strong></div>
+                </div>
+                <div class="col-lg-2" id="del-btn">
+                    <input type="button" value="X" class="btn btn-danger" id="btn-delete" onclick=${removeUserInputData()}>
+                </div>
+            </div>
+            <div class="row  justify-content-lg-center mb-3" id="row-user-input">
+                <div class="col col-lg-4" id="user-entry">
+                    <div class="fs-2" id="1"><strong>Cleaning</strong></div>
+                </div>
+                <div class="col-lg-2" id="del-btn">
+                    <input type="button" value="X" class="btn btn-danger" id="btn-delete" onclick=${removeUserInputData()}>
+                </div>
+            </div> -->
         </div>
     </div>
     <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

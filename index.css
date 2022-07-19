@@ -1,49 +1,10 @@
-* {
-    background-color:white;
-    font-family: 'Montserrat', sans-serif;
+body {
+    background-color: darkcyan;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 110%;
     text-align: center;
 }
 
-h1{
-    font-size: 150%;
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
 }
-.input-container-home {
-    /* border: 3px solid #73AD21; */
-    width: 50%;
-    margin-bottom: 25px;
-    margin-left: 25%;
-    padding: 5px;
-
-}
-
-.input-text-child {
-    /* border: 3px solid red; */
-    width: 70%;
-    padding: 1.1%
-}
-
-#input-button-home {
-    /* border: 3px solid brown; */
-    width: 25%;
-    background-color: green;
-}
-
-.data-container-home {
-    /* border: 3px solid darkcyan; */
-    margin-top: 10px;
-    width: 50%;
-    margin-left: 19%;
-}
-
-.data-sub-container {
-    border: 3px solid darkgoldenrod;
-}
-/* 
-.data-sub-container-2 {
-    border: 3px solid darkgreen;
-}
-
-.data-sub-container-3 {
-    border: 3px solid darkmagenta;
-} */

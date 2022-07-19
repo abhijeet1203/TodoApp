@@ -1,20 +1,42 @@
-// console.log('Hello');
-// Creating a new div element
-let divElement = document.createElement('div');
+//=======================================================================================
+/*Creating new element dynamically from JS*/
+/*
+Create a new element – var el = document.createElement("TAG");
+Set the contents – el.innerHTML = "CONTENT";
+Append it – document.getElementById("ID").appendChild(el);
+*/
 
-//Adding class to divElement
+//============================//
+/*Adding class to divElement*/
+/*
 divElement.classList.add('data-sub-container-4');
-//Adding text content to the div element
-let textDivElement = document.createTextNode('This is div Test');
+*/
 
-//Adding textDivElement to divElement - 2 methods appendChild() & insertBefore()
-divElement.appendChild(textDivElement);
-
-// Adding divElement to the webpage
-//2 steps - 1st step ->
-let conatinerDiv = document.querySelector('.data-container-home');
-
-    //Appending divElement to containerDiv
-
-    conatinerDiv.appendChild(divElement);
-
+//=============================//
+/*Bootstarp Variable width content */
+/*
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+</div>
+*/
